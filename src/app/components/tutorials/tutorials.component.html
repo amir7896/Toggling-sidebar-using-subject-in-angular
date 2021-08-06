@@ -1,0 +1,15 @@
+<h1 class="text-info">Our Best Tutorials</h1>
+<div class="row">
+    <div class="col">
+        <div class="card mt-4 mb-4" *ngFor="let tutorial of tutorials ">
+            <div class="card-body">
+                <div class="card-title"><h2>{{tutorial.name}}</h2></div>
+                <div class="card-text">
+                    <p>{{tutorial.description}}</p>
+                    <h5>{{tutorial.date}}</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

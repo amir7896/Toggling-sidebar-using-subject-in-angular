@@ -1,0 +1,23 @@
+<!-- Container for sidebar(s) + page content -->
+<ng-sidebar-container   >
+
+    <!-- A sidebar -->
+    <ng-sidebar   [(opened)]="open" mode="push"  >
+      <hr>
+      <p>Sidebar contents</p>
+      <ul>
+        <li><a routerLink="/tutorials">Tutorials</a></li>
+        <li><a routerLink="/about-us">About US</a></li>
+      </ul>
+    </ng-sidebar>
+    
+    <!-- Page content -->
+    <div ng-sidebar-content >
+      <div class="mt-3" id="sidbarPageContent">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </ng-sidebar-container>
+
+
+

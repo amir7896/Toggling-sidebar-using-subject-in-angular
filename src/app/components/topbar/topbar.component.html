@@ -1,0 +1,18 @@
+<ul ngbNav #nav="ngbNav" class="nav-tabs">
+  <button   (click)="clickMenu()">Toggle Sidebar</button>
+    <li ngbNavItem>
+      <a ngbNavLink  routerLink="/">Home</a>
+    </li>
+    <li ngbNavItem>
+      <a ngbNavLink routerLink="login" *ngIf="!authService.loggedIn()">Login</a>
+
+    </li>
+    <li ngbNavItem>
+        <a ngbNavLink routerLink="register" *ngIf="!authService.loggedIn()">Register</a>
+    </li>
+    <li ngbNavItem class="ml-auto">
+      <a ngbNavLink  *ngIf="authService.loggedIn()" (click)="authService.logoutUser()">Logout</a>
+  </li>
+
+  </ul>
+  

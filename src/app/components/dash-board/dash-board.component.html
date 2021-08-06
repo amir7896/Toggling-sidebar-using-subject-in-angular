@@ -1,0 +1,54 @@
+<div class="row mt-5">
+  <div class="col-md-6 col-lg-6">
+    <h1>Bar Chart</h1>
+    <div *ngIf="chart">
+      <canvas id="canvasbar">
+        {{ chart }}
+      </canvas>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-6">
+    <h1>Line Chart</h1>
+    <div *ngIf="chartline">
+      <canvas id="canvasline">
+        {{ chartline }}
+      </canvas>
+    </div>
+  </div>
+</div>
+<div class="row mt-5">
+    <div class="col-md-6 col-lg-6">
+      <h1>Doghunt Chart</h1>
+      <div *ngIf="chartdoughunt">
+        <canvas id="canvas1">
+          {{ chartdoughunt }}
+        </canvas>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-6">
+      <h3>Pie Chart</h3>
+      <div *ngIf="chartpie">
+        <canvas id="canvaspie">
+          {{ chartpie }}
+        </canvas>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-5 mb-5">
+    <div class="col-md-6 col-lg-6">
+      <h3>Ploar Chart</h3>
+      <div *ngIf="chartpolar">
+        <canvas id="canvaspolar">
+          {{ chartpolar }}
+        </canvas>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-6">
+      <h3>Radar Chart</h3>
+      <div *ngIf="chartradar">
+        <canvas id="canvasradar">
+          {{ chartradar }}
+        </canvas>
+      </div>
+    </div>
+  </div>
